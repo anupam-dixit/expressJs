@@ -10,7 +10,7 @@ pkill node
       headers: {
         'Content-Type': 'application/json',
       },
-      // body: JSON.stringify({ title: 'Fetch POST Request Example' }) //
+      // body: JSON.stringify({ title: 'Fetch POST Request Example' }) // Uncomment this line for POST method
     };
     fetch(Endpoints.files.list, requestOptions)
       .then(response => response.json())
