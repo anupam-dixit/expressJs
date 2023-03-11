@@ -19,3 +19,17 @@ data = await Invite.aggregate([
             }
         ]).exec()
  ```
+ To work with _id join
+ ```js
+ data=await Category.aggregate([
+        { "$addFields": { "converted_id": { "$toString": "$_id" }}},
+        { $lookup:
+                {
+                    from: 'files',
+                    localField: 'converted_id',
+                    foreignField: 'additional',
+                    as: 'user_data'
+                },
+        }
+    ]).exec()
+ ```
