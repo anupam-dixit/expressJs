@@ -1,5 +1,6 @@
 ### Update 
-```const data=await Category.update({_id:req.body._id}, {
+```js
+const data=await Category.update({_id:req.body._id}, {
         title:req.body.title,
         description:req.body.description,
         active:req.body.active,
