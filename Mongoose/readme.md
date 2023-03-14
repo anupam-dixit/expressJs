@@ -1,3 +1,9 @@
+### Mongorestore
+```
+mongodb+srv://root:vLd8S4TCj4PaHKn6@cpdcluster.k56ra36.mongodb.net/
+```
+
+
 ### Or
 ```js
 var user = await User.find({$or:[{'phone': req.body.phone},{'email': req.body.email}]}).lean().exec()
