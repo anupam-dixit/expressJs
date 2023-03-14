@@ -1,6 +1,6 @@
 ### Mongorestore
 ```
-mongodb+srv://root:vLd8S4TCj4PaHKn6@cpdcluster.k56ra36.mongodb.net/
+mongodb+srv://<user>:<password>@cpdcluster.k56ra36.mongodb.net/
 ```
 
 
